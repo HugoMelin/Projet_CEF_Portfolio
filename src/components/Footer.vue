@@ -3,7 +3,7 @@
 
     const copyright = computed(() =>{
         const currentYear = new Date().getFullYear()
-        return `Copyright ${currentYear} | Hugo Melin`
+        return `© Copyright ${currentYear} | Hugo Melin`
     });
 </script>
 
@@ -23,5 +23,6 @@
     .copyright {
         text-align: center;
         font-style: italic;
+        font-size: 0.8em;
     }
 </style>

@@ -36,6 +36,7 @@
     }
 
     .nav__link * {
+        font-size: 1.1em;
         padding: 5px;
         text-decoration: none;
     }
