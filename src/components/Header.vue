@@ -4,13 +4,15 @@
 <template>
     <header>
         <nav>
-            <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
+            <a class="link__img" href="/">
+                <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
+            </a>
             <div class="nav__link">
-                <a href="">Présentation</a>
+                <a href="#presentation">Présentation</a>
                 <span>|</span>
-                <a href="">Projets</a>
+                <a href="#projets">Projets</a>
                 <span>|</span>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -28,12 +30,25 @@
         align-items: center;
     }
 
+    .link__img{
+        padding: 5px;
+    }
+
     img {
         width: 75px;
     }
 
     .nav__link * {
-        padding-left: 10px;
+        padding: 5px;
         text-decoration: none;
+    }
+
+    .nav__link a {
+        padding: 15px;
+    }
+
+    a:hover {
+        background-color: #EFFAFD;
+        border-radius: 10px;
     }
 </style>
