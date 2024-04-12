@@ -4,7 +4,8 @@
   import ContactForm from './components/ContactForm.vue';
   import Presentation from './components/Presentation.vue';
   import Courses from '@/components/Courses.vue';
-  import Experiences from '@/components/Experiences.vue'
+  import Experiences from '@/components/Experiences.vue';
+  import Skills from '@/components/Skills.vue'
 </script>
 
 <template>
@@ -15,6 +16,8 @@
   <Courses/>
 
   <Experiences/>
+
+  <Skills/>
 
   <ContactForm/>
 
