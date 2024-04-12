@@ -33,7 +33,7 @@
     <div class="experience">
         <div class="experience__title">
             <span class="material-symbols-outlined">work</span><br>
-            <TitreNiveau2>Mon parcours</TitreNiveau2>
+            <TitreNiveau2>Mes expériences professionnelles</TitreNiveau2>
         </div>
     
         <div class="annee">
