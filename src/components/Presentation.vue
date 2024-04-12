@@ -20,6 +20,7 @@
         display: flex;
         padding: 10px 10%;
         gap : 20px;
+        align-items: center;
     }
 
     .presentation__text {
@@ -37,7 +38,8 @@
     }
 
     img {
-        min-width: 25%;
+        width: 25%;
+        height: 25%;
         border-radius: 50%;
         box-shadow: -4px 5px 25px #060640;
     }

@@ -3,12 +3,15 @@
   import Footer from './components/Footer.vue';
   import ContactForm from './components/ContactForm.vue';
   import Presentation from './components/Presentation.vue';
+  import Courses from '@/components/Courses.vue'
 </script>
 
 <template>
   <Header/>
 
   <Presentation/>
+
+  <Courses/>
 
   <ContactForm/>
 
