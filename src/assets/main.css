@@ -12,3 +12,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
 }
+
+.CTA {
+    background-color: #060640;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.CTA:hover {
+    box-shadow: -4px 4px 10px #060640;
+}
