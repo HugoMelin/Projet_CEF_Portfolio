@@ -20,10 +20,14 @@
             AfficheMessageErreur.value = true
         }else {
             AfficheMessageErreur.value = false
-            console.log(message.name.length)
+            let mailto
+            if(message.tel) {
+                mailto = `mailto:hugo.melin01@gmail.com?subject=${message.object}&body=Je%20suis%20%3A%20${message.name}%0AVoici%20mon%20mail%20%3A%20${message.mail}%0AVoici%20mon%20téléphone%20%3A%20${message.tel}%0A%0A${message.msg}`
+            }else {
+                mailto = `mailto:hugo.melin01@gmail.com?subject=${message.object}&body=Je%20suis%20%3A%20${message.name}%0AVoici%20mon%20mail%20%3A%20${message.mail}%0A%0A${message.msg}`
+            }
+            location.href = mailto
         }
-
-        console.log(AfficheMessageErreur.value)
     }
 </script>
 
@@ -33,7 +37,7 @@
 
         <div class="messageErreur" v-if="AfficheMessageErreur">
             <span class="material-symbols-outlined">cancel</span>
-            <p>Tous les champs doivent être renseigné</p>
+            <p>Tous les champs doivent être renseignés</p>
         </div>
     
         <div class="form__grid">
