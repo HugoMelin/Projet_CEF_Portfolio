@@ -2,28 +2,124 @@
     import TitreNiveau2 from './TitreNiveau2.vue';
 
     const competences = ['HTML', 'CSS', 'JavaScript', 'Vue.JS']
+
+    const languages = [
+        {
+            name: "Français",
+            level: "Langue maternelle"
+        },
+        {
+            name: "Anglais",
+            level: "Avancé - B2"
+        }
+    ]
+
+    const tools = [
+        {
+            name: 'Graphisme',
+            liste: 'Photoshop',
+        },
+        {
+            name: 'Systèmes',
+            liste: 'Git, GitHub, Windows'
+        },
+        {
+            name: 'Bureautique',
+            liste: 'MicroSoft Office, Suite Google'
+        }
+    ]
+
+    const hobbies = [
+        {
+            name: 'Sports',
+            liste: ['Triathlon', 'Course à pied', 'Cyclisme']
+        },
+        {
+            name: 'Jeux vidéos'
+        },
+        {
+            name: 'Voyages'
+        }
+    ]
 </script>
 
 <template>
-    <div class="skills">
-        <div class="skills__title">
-            <span class="material-symbols-outlined">sync_alt</span><br>
-            <TitreNiveau2>Mes compétences techniques</TitreNiveau2>
+    <section class="competences">
+        <div class="left__column">
+            <div class="skills">
+                <div class="skills__title">
+                    <span class="material-symbols-outlined">sync_alt</span><br>
+                    <TitreNiveau2>Mes compétences techniques</TitreNiveau2>
+                </div>
+                <div class="skills__content">
+                    <li v-for="i in competences" class="competence">{{ i }}</li>
+                </div>
+            </div>
+        
+            <div class="languages">
+                <div class="languages__title">
+                    <span class="material-symbols-outlined">language</span>
+                    <TitreNiveau2>Langues</TitreNiveau2>
+                </div>
+                <div class="languages__content">
+                    <li v-for="i in languages" class="language">
+                    {{ i.name }} : {{ i.level }}
+                    </li>
+                </div>
+            </div>
         </div>
-        <p v-for="i in competences">{{ i }}</p>
-    </div>
+    
+        <div class="right__column">
+            <div class="outils">
+                <div class="outils__title">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    <TitreNiveau2>Outils maîtrisés</TitreNiveau2>
+                </div>
+                <div class="outils__content">
+                    <li v-for="i in tools" class="tool">
+                        {{ i.name }} : {{ i.liste }}
+                    </li>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <div class="hobbies__title">
+                    <span class="material-symbols-outlined">fitness_center</span>
+                    <TitreNiveau2>Centres d'interêt</TitreNiveau2>
+                </div>
+                <div class="hobbies__content">
+                    <li v-for="i in hobbies" class="hobby">
+                        {{ i.name }}
+                        <ul>
+                            <li class="sousListe" v-for="e in i.liste">{{ e }}</li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style scoped>
-    .skills {
+    .competences {
         width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .skills, .languages, .outils, .hobbies {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: auto;
+        margin-top: 15px;
     }
 
-    .skills__title {
+    .skills__title, .languages__title, .outils__title, .hobbies__title {
         display: flex;
         align-items: center;
         text-align: center;
@@ -32,5 +128,30 @@
     .material-symbols-outlined {
         font-size: 2.5em;
         color: #A0006D;
+    }
+
+    .skills__content, .languages__content {
+        margin-top: 10px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .competence, .language {
+        list-style-type: none;
+        color: white;
+        background-color: #A0006D;
+        padding: 5px 1em;
+        border-radius: 1em;
+        box-shadow: -4px 4px 10px #A0006D;
+    }
+
+    .tool, .hobby {
+        margin-top: 10px
+    }
+
+    .sousListe {
+        list-style-type: circle;
     }
 </style>
