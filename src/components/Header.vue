@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav>
-            <a class="link__img" href="/">
+            <a class="link__img" href="#app">
                 <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
             </a>
             <div class="nav__link">

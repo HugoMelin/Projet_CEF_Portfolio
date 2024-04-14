@@ -8,11 +8,13 @@
 <template>
   <Header/>
 
-  <Presentation/>
-
-  <ContactForm/>
-
-  <Footer/>
+  <main>
+    <Presentation/>
+  
+    <ContactForm/>
+  
+    <Footer/>
+  </main>
 </template>
 
 <style scoped>
