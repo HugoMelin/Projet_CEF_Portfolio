@@ -113,6 +113,8 @@
         margin: auto;
         align-content: center;
         justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
     }
 
     .skills, .languages, .outils, .hobbies {
@@ -131,7 +133,6 @@
 
     .material-symbols-outlined {
         font-size: 2.5em;
-        color: #A0006D;
     }
 
     .skills__content, .languages__content {

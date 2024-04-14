@@ -3,6 +3,7 @@
   import Footer from './components/Footer.vue';
   import ContactForm from './components/ContactForm.vue';
   import Presentation from './components/Presentation.vue';
+  import Projects from './components/Projects.vue';
 </script>
 
 <template>
@@ -11,10 +12,12 @@
   <main>
     <Presentation/>
   
+    <Projects/>
+
     <ContactForm/>
-  
-    <Footer/>
   </main>
+
+  <Footer/>
 </template>
 
 <style scoped>

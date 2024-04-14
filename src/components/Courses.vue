@@ -54,7 +54,6 @@
 
     .material-symbols-outlined {
         font-size: 4em;
-        color: #A0006D;
     }
 
     .ecole__title {

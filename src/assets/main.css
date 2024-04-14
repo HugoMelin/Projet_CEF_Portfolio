@@ -25,3 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 .CTA:hover {
     box-shadow: -4px 4px 10px #060640;
 }
+
+.material-symbols-outlined {
+    color: #A0006D;
+}

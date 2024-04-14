@@ -61,7 +61,6 @@
 
     .material-symbols-outlined {
         font-size: 4em;
-        color: #A0006D;
     }
 
     .job__title {
