@@ -1,21 +1,49 @@
 <script setup>
+    import { ref } from 'vue'
+
+
     import TitreNiveau2 from './TitreNiveau2.vue';
+    import Courses from '@/components/Courses.vue';
+    import Experiences from '@/components/Experiences.vue';
+    import Skills from '@/components/Skills.vue';
+
+    
+  const presentationFilter = ref( 'courses' )
 </script>
 
 <template>
-    <div id="presentation">
-        <div class="presentation__text">
-            <TitreNiveau2>Présentation</TitreNiveau2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor pellentesque libero eget lobortis. Nam nulla est, varius rhoncus nunc a, imperdiet finibus erat. Curabitur sed urna fermentum, pharetra erat sit amet, pulvinar magna. Sed nec dolor justo. Integer imperdiet tellus blandit nisl dictum porta. Sed magna nisl, molestie in sagittis id, finibus quis justo.</p>
-            <a href="#contact" class="CTA">Me contacter</a>
-        </div>
+    <section id="about">
+        <section class="presentation">
+            <div class="presentation__text">
+                <TitreNiveau2>Présentation</TitreNiveau2>
+                <p>Je suis Hugo Melin, passionné par le développement web. Je suis un développeur web débutant avec une forte motivation et un grand intérêt pour le front et le back end. <br>
+                    Malgré mon expérience récente, j'ai acquis de solides compétences en HTML, CSS, JavaScript et j'ai déjà réalisé plusieurs projets personnels qui me permettent de mettre en avant mes capacités. <br>
+                    Dans ce portfolio, vous découvrirez quelques exemples de mes réalisations, qui illustrent ma passion pour le développement web et mon aptitude à apprendre rapidement. <br>
+                    Je suis impatient de discuter de vos besoins et de découvrir comment je peux vous aider à concrétiser vos projets web. N'hésitez pas à me contacter pour toute question ou pour en savoir plus sur mes réalisations.</p>
+                <a href="#contact" class="CTA">Me contacter</a>
+            </div>
+        
+            <img src="@/assets/images/photoProfil.jpg" alt="Photo d'Hugo">
+        </section>
     
-        <img src="@/assets/images/photoProfil.jpg" alt="Photo d'Hugo">
-    </div>
+        <section class="about__filter">
+            <button class="about__filter__button CTA" @click="presentationFilter='courses'">Parcours</button>
+            <button class="about__filter__button CTA" @click="presentationFilter='experiences'">Expériences</button>
+            <button class="about__filter__button CTA" @click="presentationFilter='skills'">Compétences</button>  
+        </section>
+    
+        <section class="about__content">
+            <Courses v-if="presentationFilter === 'courses' "/>
+        
+            <Experiences v-if="presentationFilter === 'experiences' "/>
+        
+            <Skills v-if="presentationFilter === 'skills' "/>
+        </section>
+    </section>
 </template>
 
 <style scoped>
-    #presentation {
+    .presentation {
         background-color: #EFFAFD;
         display: flex;
         padding: 10px 10%;
@@ -43,4 +71,19 @@
         border-radius: 50%;
         box-shadow: -4px 5px 25px #060640;
     }
+
+    .about__filter {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    justify-content: center;
+  }
+
+  #about {
+    border-bottom: 1px solid #060640;
+  }
+
+  .about__content {
+    margin-bottom: 15px;
+  }
 </style>

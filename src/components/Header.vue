@@ -5,7 +5,7 @@
                 <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
             </a>
             <div class="nav__link">
-                <a href="#presentation">Présentation</a>
+                <a href="#about">Présentation</a>
                 <span>|</span>
                 <a href="#projets">Projets</a>
                 <span>|</span>

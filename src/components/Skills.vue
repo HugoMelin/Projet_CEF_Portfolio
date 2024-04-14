@@ -76,9 +76,11 @@
                     <TitreNiveau2>Outils maîtrisés</TitreNiveau2>
                 </div>
                 <div class="outils__content">
-                    <li v-for="i in tools" class="tool">
-                        {{ i.name }} : {{ i.liste }}
-                    </li>
+                    <ul>
+                        <li v-for="i in tools" class="tool">
+                            {{ i.name }} : {{ i.liste }}
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -88,12 +90,14 @@
                     <TitreNiveau2>Centres d'interêt</TitreNiveau2>
                 </div>
                 <div class="hobbies__content">
-                    <li v-for="i in hobbies" class="hobby">
-                        {{ i.name }}
-                        <ul>
-                            <li class="sousListe" v-for="e in i.liste">{{ e }}</li>
-                        </ul>
-                    </li>
+                    <ul>
+                        <li v-for="i in hobbies" class="hobby">
+                            {{ i.name }}
+                            <ul>
+                                <li class="sousListe" v-for="e in i.liste">{{ e }}</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -148,10 +152,15 @@
     }
 
     .tool, .hobby {
-        margin-top: 10px
+        margin-top: 10px;
+        text-align: start;
     }
 
     .sousListe {
         list-style-type: circle;
+    }
+
+    .hobbies__content {
+        align-self: flex-start;
     }
 </style>
