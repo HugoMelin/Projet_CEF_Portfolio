@@ -17,6 +17,9 @@
 
 <style scoped>
     header {
+        position: sticky;
+        background-color: white;
+        top: 0;
         padding: 15px;
         border-bottom: 1px solid #060640;
     }
