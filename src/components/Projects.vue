@@ -20,7 +20,7 @@
         <div class="smallCard__box">
             <SmallCard @click="showModal=true; msgToModal=i" v-for="i in projects" :projet="i"></SmallCard>
         </div>
-        <Modal v-if="showModal" @close="showModal = false" :projet="msgToModal.name"></Modal>
+        <Modal v-if="showModal" @close="showModal = false" :projet="msgToModal"></Modal>
     </section>
 </template>
 
