@@ -2,33 +2,40 @@
     "projects": [
         {
             "id": 1,
-            "tag": [],
-            "name": "Hugo",
-            "CreateDate": "14/04/2024",
-            "image": {
+            "tag": ["HTML", "CSS"],
+            "name": "CV - Hugo Melin",
+            "CreateDate": "09/03/2024",
+            "image": [
+                {
                 "src":"src/assets/images/Melin-logo.png",
-                "alt":"Projet numéro 1"
-            }
+                "alt":"CV - Hugo Melin"
+                }
+            ],
+            "link": "https://github.com/HugoMelin/Projet_CEF_CV"
         },
         {
             "id": 2,
             "tag": [],
             "name": "Laura",
             "CreateDate": "14/04/2024",
-            "image": {
+            "image": [
+                {
                 "src": "src/assets/images/photoProfil.jpg",
                 "alt": "Projet numéro 2"
             }
+        ]
         },
         {
             "id": 3,
             "tag": [],
             "name": "Camille",
             "CreateDate": "14/04/2024",
-            "image": {
+            "image": [
+                {
                 "src": "src/assets/images/nonValide.svg",
                 "alt": "Projet numéro 2"
             }
+            ]
         }
     ]
 }

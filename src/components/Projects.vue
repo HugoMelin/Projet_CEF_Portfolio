@@ -20,21 +20,11 @@
         <div class="smallCard__box">
             <SmallCard @click="showModal=true; msgToModal=i" v-for="i in projects" :projet="i"></SmallCard>
         </div>
-        <Modal class="modal__box" v-if="showModal" @close="showModal = false" :projet="msgToModal.name"></Modal>
+        <Modal v-if="showModal" @close="showModal = false" :projet="msgToModal.name"></Modal>
     </section>
 </template>
 
 <style scoped>
-    .modal__box {
-        position: fixed;
-        top: 5%;
-        left: 12.5%;
-        width: 75%;
-        height: 90%;
-        overflow: auto;
-        border: 1px solid black;
-    }
-
     button {
         border: none;
         background-color: #EFFAFD;
