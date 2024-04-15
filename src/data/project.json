@@ -38,7 +38,16 @@
             "name": "Portfolio RobbieLens",
             "createDate": "07/02/2024",
             "description": "",
-            "image": [""],
+            "image": [
+                {
+                    "src":"src/assets/images/projets/Portfolio_RobbiesLens-1.jpg",
+                    "alt":"Portfolio Robbie Lens Home Page"
+                },
+                {
+                    "src":"src/assets/images/projets/Portfolio_RobbiesLens-2.jpg",
+                    "alt":"Portfolio Robbie Lens Page Portfolio "
+                }
+            ],
             "link": "https://github.com/HugoMelin/Projet_CEF_CV"
         },
         {

@@ -5,7 +5,9 @@
 <template>
     <div class="SmallCard">
         <div class="polaroid">
-            <img :src="projet.image[0].src" :alt="projet.image.alt">
+            <div class="polariod__image">
+                <img :src="projet.image[0].src" :alt="projet.image.alt">
+            </div>
             <p class="caption">
                 <span class="material-symbols-outlined">zoom_in</span>
                 {{ projet.name }}</p>
@@ -23,16 +25,24 @@
     }
 
     .polaroid {
+        height: 250px;
         border-radius: 20px;
         padding: 10px;
         box-shadow: -4px 5px 25px #060640;
         background-color: white;
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .polaroid > img {
+    .polaroid img {
         width: 100%;
         height: auto;
+    }
+
+    .polariod__image {
+        margin: auto;
     }
 
     .caption {
