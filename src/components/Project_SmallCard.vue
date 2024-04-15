@@ -5,7 +5,7 @@
 <template>
     <div class="SmallCard">
         <div class="polaroid">
-            <img :src="projet.image.src" alt="projet.image.alt">
+            <img :src="projet.image.src" :alt="projet.image.alt">
             <p class="caption">
                 <span class="material-symbols-outlined">zoom_in</span>
                 {{ projet.name }}</p>
@@ -40,5 +40,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .material-symbols-outlined {
+        color: #060640;
     }
 </style>
