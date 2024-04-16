@@ -39,6 +39,7 @@
     .polaroid img {
         width: 100%;
         height: auto;
+        max-height: 205px;
     }
 
     .polariod__image {
