@@ -9,12 +9,8 @@
 <template>
   <Header/>
 
-  <main>
-    <Presentation/>
-  
-    <Projects/>
-
-    <ContactForm/>
+  <main>  
+    <RouterView></RouterView>
   </main>
 
   <Footer/>
