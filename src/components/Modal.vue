@@ -128,4 +128,22 @@
         color: #060640;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 480px) {
+        .modal {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .modal__main {
+            flex-direction: column-reverse;
+        }
+
+        .modal__images, .modal__info{
+            width: 95%;
+        }
+    }
 </style>

@@ -79,10 +79,6 @@
         justify-content: center;
     }
 
-    #about {
-        border-bottom: 1px solid #060640;
-    }
-
     .about__content {
         margin-bottom: 15px;
         margin-bottom: 2em;
