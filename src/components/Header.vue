@@ -1,15 +1,17 @@
 <template>
     <header>
         <nav>
-            <a class="link__img" href="#app">
+            <router-link class="link__img" to="/">
                 <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
+            </router-link>
+            <a class="link__img" href="#app">
             </a>
             <div class="nav__link">
-                <a href="#about">Présentation</a>
+                <router-link id="about__link" to="/#about">Présentation</router-link>
                 <span>|</span>
-                <a href="#projets">Projets</a>
+                <router-link to="/#projets">Projets</router-link>
                 <span>|</span>
-                <a href="#contact">Contact</a>
+                <router-link to="/#contact">Contact</router-link>
             </div>
         </nav>
     </header>
