@@ -32,6 +32,7 @@
                 </a>
             </div>
         </div>
+        <p>Dernières modifications le<time datetime="04/17/24">17 avril 2024</time></p>
         <p class="copyright">{{ copyright }}</p>
     </footer>
 </template>
@@ -57,8 +58,15 @@
         flex-direction: column;
     }
 
-    .copyright {
+    p {
         text-align: center;
+    }
+
+    time {
+        font-style: italic;
+    }
+
+    .copyright {
         font-style: italic;
         font-size: 0.8em;
     }

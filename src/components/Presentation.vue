@@ -73,17 +73,27 @@
     }
 
     .about__filter {
-    display: flex;
-    gap: 15px;
-    margin: 15px 0;
-    justify-content: center;
-  }
+        display: flex;
+        gap: 15px;
+        margin: 15px 0;
+        justify-content: center;
+    }
 
-  #about {
-    border-bottom: 1px solid #060640;
-  }
+    .about__content {
+        margin-bottom: 15px;
+        margin-bottom: 2em;
+    }
 
-  .about__content {
-    margin-bottom: 15px;
-  }
+    @media screen and (max-width: 480px) {
+        .presentation {
+            flex-direction: column-reverse;
+            padding: 10px 0;
+        }
+        .presentation__text p {
+            width: 85%;
+        }
+        img {
+            width: 50%;
+        }
+    }
 </style>

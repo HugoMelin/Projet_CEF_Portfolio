@@ -94,4 +94,10 @@
         border-radius: 25px;
         box-shadow: -4px 5px 10px #060640;
     }
+
+    @media screen and (max-width: 480px) {
+        .experience {
+            width: 85%;
+        }
+    }
 </style>
