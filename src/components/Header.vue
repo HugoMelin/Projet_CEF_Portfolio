@@ -53,5 +53,6 @@
     a:hover {
         background-color: #EFFAFD;
         border-radius: 10px;
+        text-decoration: underline;
     }
 </style>

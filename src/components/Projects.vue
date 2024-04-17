@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, computed } from 'vue'
+    import { ref } from 'vue'
     import { projects } from '@/data/project.json';
 
     import TitreNiveau2 from './TitreNiveau2.vue';
@@ -47,12 +47,18 @@
     }
 
     .smallCard__box {
-        margin: 15px auto;
+        margin: 20px auto;
         width: 60%;
         display: flex;
         gap: 25px;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .SmallCard {
+        flex-basis: 30%;
+        max-width: 270px;
+        min-width: 270px;
     }
 </style>

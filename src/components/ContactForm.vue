@@ -92,6 +92,9 @@
     }
 
     .CTA {
+        width: 50%;
+        margin: auto;
+        grid-column: 1/3;
         grid-row: 4 / 5;
     }
 

@@ -85,5 +85,6 @@
 
   .about__content {
     margin-bottom: 15px;
+    margin-bottom: 2em;
   }
 </style>

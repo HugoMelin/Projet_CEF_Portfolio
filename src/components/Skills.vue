@@ -136,7 +136,7 @@
     }
 
     .skills__content, .languages__content {
-        margin-top: 10px;
+        margin-top: 15px;
         display: flex;
         gap: 15px;
         flex-wrap: wrap;
@@ -161,7 +161,8 @@
         list-style-type: circle;
     }
 
-    .hobbies__content {
+    .hobbies__content, .outils__content {
         align-self: flex-start;
+        margin: 15px 0;
     }
 </style>
