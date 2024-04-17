@@ -105,6 +105,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        font-size: 1.1em;
     }
 
     @media screen and (max-width: 480px) {
