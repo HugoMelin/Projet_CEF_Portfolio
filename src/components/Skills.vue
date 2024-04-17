@@ -165,4 +165,10 @@
         align-self: flex-start;
         margin: 15px 0;
     }
+
+    @media screen and (max-width: 480px) {
+        .competences {
+            width: 85%;
+        }
+    }
 </style>

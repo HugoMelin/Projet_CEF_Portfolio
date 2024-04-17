@@ -1,11 +1,29 @@
+<script setup>
+    import { ref } from 'vue'
+
+    let showMenu = ref( false )
+</script>
+
 <template>
     <header>
         <nav>
             <router-link class="link__img" to="/">
                 <img src="@/assets/images/Melin-logo.png" alt="Melin Logo">
             </router-link>
-            <a class="link__img" href="#app">
-            </a>
+            
+            <div class="sideNav__background" v-if="showMenu" @click="showMenu=false"></div>
+
+            <div class="sideNav" v-if="showMenu">
+                <span class="material-symbols-outlined" @click="showMenu=false">close</span>
+                <ul class="sideNav__list">
+                    <router-link id="about__link" to="/#about" @click="showMenu=false">Présentation</router-link>
+                    <router-link to="/#projets" @click="showMenu=false">Projets</router-link>
+                    <router-link to="/#contact" @click="showMenu=false">Contact</router-link>
+                </ul>
+            </div>
+
+            <span class="material-symbols-outlined burger-icon" @click="showMenu=true">menu</span>
+
             <div class="nav__link">
                 <router-link id="about__link" to="/#about">Présentation</router-link>
                 <span>|</span>
@@ -19,8 +37,9 @@
 
 <style scoped>
     header {
-        position: sticky;
+        position: fixed;
         background-color: white;
+        width: 99%;
         top: 0;
         padding: 15px;
         border-bottom: 1px solid #060640;
@@ -54,5 +73,49 @@
         background-color: #EFFAFD;
         border-radius: 10px;
         text-decoration: underline;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .sideNav {
+        width: 45%;
+        height: 100%;
+        box-sizing: border-box;
+        position: fixed;
+        top: 85px;
+        right: 0;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid #060640;
+        border-top: none;
+        border-right: none;
+    }
+
+    .sideNav__background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sideNav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .burger-icon {
+            display: block;
+            color: #060640;
+            margin-right: 10%;
+        }
+
+        .nav__link {
+            display: none;
+        }
     }
 </style>

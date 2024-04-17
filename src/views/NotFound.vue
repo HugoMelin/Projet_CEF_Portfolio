@@ -45,4 +45,12 @@
     .title {
         font-size: 2em;
     }
+
+    @media screen and (max-width: 480px) {
+        .error404 {
+            width: 100%;
+            padding: 5vh 0;
+            margin-top: 25%;
+        }
+    }
 </style>
