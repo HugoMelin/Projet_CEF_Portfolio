@@ -20,7 +20,7 @@
                     Malgré mon expérience récente, j'ai acquis de solides compétences en HTML, CSS, JavaScript et j'ai déjà réalisé plusieurs projets personnels qui me permettent de mettre en avant mes capacités. <br>
                     Dans ce portfolio, vous découvrirez quelques exemples de mes réalisations, qui illustrent ma passion pour le développement web et mon aptitude à apprendre rapidement. <br>
                     Je suis impatient de discuter de vos besoins et de découvrir comment je peux vous aider à concrétiser vos projets web. N'hésitez pas à me contacter pour toute question ou pour en savoir plus sur mes réalisations.</p>
-                <a href="#contact" class="CTA">Me contacter</a>
+                <router-link class="CTA" :to="{hash:'#contact'}">Me contacter</router-link>
             </div>
         
             <img src="@/assets/images/photoProfil.jpg" alt="Photo d'Hugo">
