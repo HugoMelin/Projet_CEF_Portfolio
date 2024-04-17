@@ -14,7 +14,7 @@
             <div class="sideNav__background" v-if="showMenu" @click="showMenu=false"></div>
 
             <div class="sideNav" v-if="showMenu">
-                <span class="material-symbols-outlined" @click="showMenu=false">close</span>
+                <span class="material-symbols-outlined link" @click="showMenu=false">close</span>
                 <ul class="sideNav__list">
                     <router-link id="about__link" to="/#about" @click="showMenu=false">Présentation</router-link>
                     <router-link to="/#projets" @click="showMenu=false">Projets</router-link>
@@ -22,7 +22,7 @@
                 </ul>
             </div>
 
-            <span class="material-symbols-outlined burger-icon" @click="showMenu=true">menu</span>
+            <span class="material-symbols-outlined burger-icon link" @click="showMenu=true">menu</span>
 
             <div class="nav__link">
                 <router-link id="about__link" to="/#about">Présentation</router-link>
@@ -80,7 +80,7 @@
     }
 
     .sideNav {
-        width: 45%;
+        width: 65%;
         height: 100%;
         box-sizing: border-box;
         position: fixed;
@@ -106,6 +106,11 @@
         flex-direction: column;
         gap: 15px;
         font-size: 1.1em;
+        padding-right: 1em;
+    }
+
+    .link {
+        cursor: pointer;
     }
 
     @media screen and (max-width: 480px) {

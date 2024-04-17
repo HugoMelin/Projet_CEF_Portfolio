@@ -115,4 +115,15 @@
         color: red;
         font-size: 0.9em;
     }
+
+    @media screen and (max-width: 480px) {
+        .form__grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #message {
+            height: 6em;
+        }
+    }
 </style>
