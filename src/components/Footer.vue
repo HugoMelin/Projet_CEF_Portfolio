@@ -32,8 +32,10 @@
                 </a>
             </div>
         </div>
-        <p>Dernières modifications le<time datetime="04/17/24">17 avril 2024</time></p>
-        <p class="copyright">{{ copyright }}</p>
+        <div class="footer__copyright">
+            <p>Dernières modifications le<time datetime="04/17/24">17 avril 2024</time></p>
+            <p class="copyright">{{ copyright }}</p>
+        </div>
     </footer>
 </template>
 
@@ -58,7 +60,7 @@
         flex-direction: column;
     }
 
-    p {
+    .footer__copyright {
         text-align: center;
     }
 
