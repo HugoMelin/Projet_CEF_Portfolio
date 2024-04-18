@@ -16,7 +16,7 @@
             <div class="sideNav" v-if="showMenu">
                 <span class="material-symbols-outlined" @click="showMenu=false">close</span>
                 <ul class="sideNav__list">
-                    <router-link id="about__link" to="/#about" @click="showMenu=false">Présentation</router-link>
+                    <router-link to="/#about" @click="showMenu=false">Présentation</router-link>
                     <router-link to="/#projets" @click="showMenu=false">Projets</router-link>
                     <router-link to="/#contact" @click="showMenu=false">Contact</router-link>
                 </ul>
@@ -27,9 +27,9 @@
             <div class="nav__link">
                 <router-link id="about__link" to="/#about">Présentation</router-link>
                 <span>|</span>
-                <router-link to="/#projets">Projets</router-link>
+                <router-link id="project__link" to="/#projets">Projets</router-link>
                 <span>|</span>
-                <router-link to="/#contact">Contact</router-link>
+                <router-link id="contact__link" to="/#contact">Contact</router-link>
             </div>
         </nav>
     </header>
