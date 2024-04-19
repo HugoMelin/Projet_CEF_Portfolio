@@ -12,8 +12,8 @@
 </script>
 
 <template>
-    <section id="about">
-        <section class="presentation">
+    <div id="about">
+        <div class="presentation">
             <div class="presentation__text">
                 <TitreNiveau2>Présentation</TitreNiveau2>
                 <p>Je suis Hugo Melin, passionné par le développement web. Je suis un développeur web débutant avec une forte motivation et un grand intérêt pour le front et le back end. <br>
@@ -24,22 +24,22 @@
             </div>
         
             <img src="@/assets/images/photoProfil.jpg" alt="Photo d'Hugo">
-        </section>
+        </div>
     
-        <section class="about__filter">
+        <div class="about__filter">
             <button class="about__filter__button CTA" @click="presentationFilter='courses'">Parcours</button>
             <button class="about__filter__button CTA" @click="presentationFilter='experiences'">Expériences</button>
             <button class="about__filter__button CTA" @click="presentationFilter='skills'">Compétences</button>  
-        </section>
+        </div>
     
-        <section class="about__content">
+        <div class="about__content">
             <Courses v-if="presentationFilter === 'courses' "/>
         
             <Experiences v-if="presentationFilter === 'experiences' "/>
         
             <Skills v-if="presentationFilter === 'skills' "/>
-        </section>
-    </section>
+        </div>
+    </div>
 </template>
 
 <style scoped>

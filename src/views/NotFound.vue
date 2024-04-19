@@ -3,16 +3,16 @@
 </script>
 
 <template>
-    <section>
+    <div>
         <RouterLink class="error404" to="/">
             <TitreNiveau2 class="title">ERROR-404</TitreNiveau2>
             <p class="CTA">Revenir sur le site</p>
         </RouterLink>
-    </section>
+    </div>
 </template>
 
 <style scoped>
-    section{
+    div{
         margin: 15px;
     }
 
