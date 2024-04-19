@@ -11,7 +11,7 @@ Vous retrouverez dans ce Readme comment installer et ouvrir ce projet.
 
 Lien du clone : [https://github.com/HugoMelin/Projet_CEF_Portfolio.git](https://github.com/HugoMelin/Projet_CEF_Portfolio.git)
 
-1- Ovrez node dans un nouveau dossier où vous voulez cloner le projet.
+1- Ovrez votre terminal dans un nouveau dossier où vous voulez cloner le projet.
 
 2- Taper "git clone" et copier l'URL ci-dessus.
 ```sh
@@ -36,7 +36,7 @@ install npm
 
 ## Lancer le projet
 
-Une fois cloné et npm installé, vous pourrez compiler et lancer le projet en entrant la commande suivante avec node.js.
+Une fois cloné et npm installé, vous pourrez compiler et lancer le projet en entrant la commande suivante dans votre terminal.
 
 ```sh
 npm run dev
