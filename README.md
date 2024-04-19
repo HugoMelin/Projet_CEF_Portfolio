@@ -20,9 +20,23 @@ git clone https://github.com/HugoMelin/Projet_CEF_Portfolio.git
 
 3- Presser "Entrer" pour créer votre clone local.
 
+## Installer npm 
+
+Pour pouvoir lancer le projet, vous devez installer npm dans le fichier pour ce faire.
+
+1- Rentrez dans le dossier cloner.
+```sh
+cd Projet_CEF_Portfolio
+```
+
+2- Installez le package.
+```sh
+install npm
+```
+
 ## Lancer le projet
 
-Un fois cloner, vous pourrez compiler et lancer le projet en entrant la commande suivante avec node.js
+Une fois cloné et npm installé, vous pourrez compiler et lancer le projet en entrant la commande suivante avec node.js.
 
 ```sh
 npm run dev
