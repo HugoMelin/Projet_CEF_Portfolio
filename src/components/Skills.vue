@@ -44,7 +44,7 @@
 </script>
 
 <template>
-    <section class="competences">
+    <div class="competences">
         <div class="left__column">
             <div class="skills">
                 <div class="skills__title">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <style scoped>
