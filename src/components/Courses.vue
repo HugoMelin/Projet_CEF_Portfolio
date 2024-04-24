@@ -19,6 +19,12 @@
             date: 'Sept 2022 - à Février 2024',
             title: 'Master Grande Ecole',
         },
+        annee4: {
+            ecole: 'Centre Européen de formation',
+            date : 'Février 2024 - Août 2024',
+            title: 'Titre Professionnel niveau 5 - Développeur web et Web mobile',
+            comment: 'Technologies : HTML - CSS - JavaScript - Vue.Js - Git/GitHub - Figma - React.js - Wordpress - Angular - XML / SQL / MySQL - Django - Node.js - PHP - Symfony'
+        }
     }
 </script>
 
