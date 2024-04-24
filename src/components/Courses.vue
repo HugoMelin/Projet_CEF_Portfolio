@@ -6,7 +6,7 @@
             ecole: 'Université de La Rochelle',
             date: 'Sept 2018 - Fév 2020',
             title: 'Licence Informatique',
-            comment: 'Validation année 1'
+            comment: 'Validation année 1. Technologies : HTML - CSS - Java - Python'
         },
         annee2: {
             ecole: 'Excelia Group La Rochelle',
@@ -18,6 +18,7 @@
             ecole: 'Excelia Group La Rochelle',
             date: 'Sept 2022 - à Février 2024',
             title: 'Master Grande Ecole',
+            comment: 'Master 1 - Management des ventes et de la marque.'
         },
         annee4: {
             ecole: 'Centre Européen de formation',
