@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <section id="projets">
+    <div id="projets">
         <div class="projets__title">
             <span class="material-symbols-outlined">terminal</span>
             <TitreNiveau2>Projets</TitreNiveau2>
@@ -21,7 +21,7 @@
             <SmallCard @click="showModal=true; msgToModal=i" v-for="i in projects" :projet="i"></SmallCard>
         </div>
         <Modal v-if="showModal" @close="showModal = false" :projet="msgToModal"></Modal>
-    </section>
+    </div>
 </template>
 
 <style scoped>

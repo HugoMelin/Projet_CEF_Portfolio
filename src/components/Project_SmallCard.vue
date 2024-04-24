@@ -6,7 +6,7 @@
     <div class="SmallCard">
         <div class="polaroid">
             <div class="polariod__image">
-                <img :src="projet.image[0].src" :alt="projet.image.alt">
+                <img :src="projet.image[0].src" :alt="projet.image[0].alt">
             </div>
             <p class="caption">
                 <span class="material-symbols-outlined">zoom_in</span>

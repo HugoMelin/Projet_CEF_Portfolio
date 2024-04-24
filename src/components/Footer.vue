@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <p>Dernières modifications le<time datetime="04/17/24">17 avril 2024</time></p>
+            <p>Dernières modifications le<time datetime="2024-04-17">17 avril 2024</time></p>
             <p class="copyright">{{ copyright }}</p>
         </div>
     </footer>
